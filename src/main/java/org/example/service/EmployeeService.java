@@ -1,4 +1,18 @@
 package org.example.service;
 
-public class EmployeeService {
+import org.example.entity.Employee;
+
+import java.util.List;
+
+public interface EmployeeService {
+
+    List<Employee> getAllEmployees();
+
+    Employee createEmployee(Employee employee);
+
+    Employee getEmployeeById(Long id);
+
+    Employee updateEmployee(Long id, Employee employeeDetails);
+
+    void deleteEmployee(Long id);
 }
